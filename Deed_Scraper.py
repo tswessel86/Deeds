@@ -1,5 +1,4 @@
 from pyautogui import screenshot
-# import pytesseract
 from pytesseract import Output, image_to_string
 from datetime import date, datetime, timedelta
 from time import sleep

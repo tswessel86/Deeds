@@ -200,9 +200,7 @@ def search_docs(doc_driver, search_periods):
 
 		search_driver.quit()
 
-	# df = pd.DataFrame(FHA_VA_DEEDS, columns=['Grantor', 'Grantee', 'Deed Type', 'Record Date', 'Instrument #'])	
-	df = DataFrame(FHA_VA_DEEDS, columns=['Grantor', 'Grantee', 'Deed Type', 'Record Date', 'Instrument #'])	
-		
+	df = DataFrame(FHA_VA_DEEDS, columns=['Grantor', 'Grantee', 'Deed Type', 'Record Date', 'Instrument #'])			
 	filename = "Deeds_" + search_periods[0][0].replace("/", "-") + "_thru_" + search_periods[-1][1].replace("/","-") + ".xlsx"
 	df.to_excel(excel_writer=filename, index = False)
 	print("Search complete. Data recorded.")
@@ -290,14 +288,12 @@ def check_for_doc_link(driver):
 
 
 def take_screenshot():
-	# scrn = pyautogui.screenshot()
 	scrn = screenshot()
 	scrn.save(IMG_PATH)
 	return
 
 
 def search_text():
-	# txt = pytesseract.image_to_string(IMG_PATH).lower()
 	txt = image_to_string(IMG_PATH).lower()
 	for t in SEARCH_TERMS:
 		if t in txt:

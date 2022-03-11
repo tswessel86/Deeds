@@ -9,9 +9,7 @@ Link to Chrome download: https://www.google.com/chrome/
 4. Open installer, make sure you click "Add Python 3.8 to PATH"
 5. Choose default installation
 6. https://www.youtube.com/watch?v=uKHVNKd3f20&ab_channel=AmitThinks also explains how to do this
-### 3. Setup Scraper
-Double-click the batch file `scraper_setup.bat` to run. This will install all necessary tools and frameworks not mentioned above.
-### 4. Edit Login Information
+### 3. Edit Login Information
 1. Right-click `login.txt` and select "Edit"
 2. Type in your login information for the Larimer County Records website as follows:<br>
       ```
@@ -20,7 +18,7 @@ Double-click the batch file `scraper_setup.bat` to run. This will install all ne
       ```
 3. Save file before exiting. 
 ## Using the Scraper
-1. Click to run Deed_Scraper.exe. This will open a Command Prompt window, which will then ask you for a date range (see Considerations below for more information).
+1. Click to run scraper.bat. This will open a Command Prompt window, which will install/update any necessary frameworks before prompting the user a date range (see Considerations below for more information).
 2. Enter start date in format `MM/DD/YYYY`, press `Enter`
 3. Enter end date in format `MM/DD/YYYY`, press `Enter`
 4. Allow scraper to run unimpeded. A window will open that will log into the website, and then show the document that is currently being looked at. <b>NOTE:</b> This document will only change when it's found a record that doesn't have a release of deed document attached to it, so don't be surprised if you sometimes see the same document on the screen for a little while. 

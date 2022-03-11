@@ -6,7 +6,7 @@ Link to Chrome download: https://www.google.com/chrome/
 1. Go to https://www.python.org/downloads/release/python-3102/
 2. Scroll to the bottom, and choose your installer
 3. Assuming your system is 64-bit, click "Windows installer (64-bit)"
-4. Open installer, make sure you click "Add Python 3.8 to PATH"
+4. Open installer, make sure you click "Add Python 3.10 to PATH"
 5. Choose default installation
 6. https://www.youtube.com/watch?v=uKHVNKd3f20&ab_channel=AmitThinks also explains how to do this
 ### 3. Edit Login Information
